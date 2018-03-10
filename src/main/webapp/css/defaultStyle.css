@@ -1,0 +1,53 @@
+.error {
+    color: red;
+}
+.container1 {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-rows: repeat(2, 190px);
+
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.56);
+    padding: 15px;
+    font-size: 26px;
+    text-align: center;
+}
+.button-course {
+    background-color: #222222;
+    border: none;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    cursor: pointer;
+    margin: 4px 2px;
+    border-radius: 4px;
+}
+
+#subscriptions {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#subscriptions td, .subscriptions th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#subscriptions tr:nth-child(even){background-color: #f2f2f2;}
+
+#subscriptions tr:hover {background-color: #ddd;}
+
+#subscriptions th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #00f2f3;
+    color: white;
+}
