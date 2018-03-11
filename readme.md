@@ -9,8 +9,8 @@ Each course is assigned to the teacher.
 Teacher:
 - assign assignments for students;
 - scans the tasks completed by students and puts them for evaluation;
-- Edit tasks for their courses.
+- edit tasks for their courses.
 
 Administrators manage courses:
 - create courses and assign courses to teachers;
-- Manage users;
+- manage users;
