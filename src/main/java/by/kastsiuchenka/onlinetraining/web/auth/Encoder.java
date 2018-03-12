@@ -8,8 +8,7 @@ import java.security.NoSuchAlgorithmException;
 public class Encoder {
 
     public static String encode(String pwd) {
-        try {
-
+        try {   
             MessageDigest md = MessageDigest.getInstance("MD5");
             byte[] digest = md.digest(pwd.getBytes());
             BASE64Encoder encoder = new BASE64Encoder();
