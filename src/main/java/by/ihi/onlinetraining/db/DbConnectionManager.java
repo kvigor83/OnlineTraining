@@ -1,4 +1,4 @@
-package by.kastsiuchenka.onlinetraining.db;
+package by.ihi.onlinetraining.db;
 
 
 import org.apache.logging.log4j.LogManager;
@@ -15,7 +15,7 @@ public class DbConnectionManager {
         return tl.get();
     }
 
-    public static void releaseConnection() {  // возможно не надо,так как есть метод закрытия у объекта proxy
+    public static void releaseConnection() {
         try {
             if (tl.get() != null) {
                 ConnectionPool.getInstance().returnConnection(tl.get());

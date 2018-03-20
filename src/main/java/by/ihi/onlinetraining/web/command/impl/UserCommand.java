@@ -1,11 +1,10 @@
-package by.kastsiuchenka.onlinetraining.web.command.impl;
+package by.ihi.onlinetraining.web.command.impl;
 
-import by.kastsiuchenka.onlinetraining.dao.DAOException;
-import by.kastsiuchenka.onlinetraining.entity.User;
-import by.kastsiuchenka.onlinetraining.service.ServiceException;
-import by.kastsiuchenka.onlinetraining.service.UserService;
-import by.kastsiuchenka.onlinetraining.service.impl.UserServiceImpl;
-import by.kastsiuchenka.onlinetraining.web.command.Command;
+import by.ihi.onlinetraining.entity.User;
+import by.ihi.onlinetraining.service.ServiceException;
+import by.ihi.onlinetraining.service.impl.UserServiceImpl;
+import by.ihi.onlinetraining.web.command.Command;
+import by.ihi.onlinetraining.service.UserService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

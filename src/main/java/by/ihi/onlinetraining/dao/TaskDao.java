@@ -1,7 +1,7 @@
-package by.kastsiuchenka.onlinetraining.dao;
+package by.ihi.onlinetraining.dao;
 
 
-import by.kastsiuchenka.onlinetraining.entity.Task;
+import by.ihi.onlinetraining.entity.Task;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

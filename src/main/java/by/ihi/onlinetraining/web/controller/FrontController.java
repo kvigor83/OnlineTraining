@@ -1,8 +1,8 @@
-package by.kastsiuchenka.onlinetraining.web.controller;
+package by.ihi.onlinetraining.web.controller;
 
-import by.kastsiuchenka.onlinetraining.web.command.Command;
-import by.kastsiuchenka.onlinetraining.web.command.CommandType;
-import by.kastsiuchenka.onlinetraining.web.handler.RequestHandler;
+import by.ihi.onlinetraining.web.command.CommandType;
+import by.ihi.onlinetraining.web.command.Command;
+import by.ihi.onlinetraining.web.handler.RequestHandler;
 
 import java.io.IOException;
 

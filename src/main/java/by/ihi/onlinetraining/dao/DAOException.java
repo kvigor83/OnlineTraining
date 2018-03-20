@@ -1,4 +1,4 @@
-package by.kastsiuchenka.onlinetraining.dao;
+package by.ihi.onlinetraining.dao;
 
 
 public class DAOException extends Exception {

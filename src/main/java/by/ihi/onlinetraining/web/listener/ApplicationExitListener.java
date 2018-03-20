@@ -1,7 +1,7 @@
-package by.kastsiuchenka.onlinetraining.web.listener;
+package by.ihi.onlinetraining.web.listener;
 
-import by.kastsiuchenka.onlinetraining.db.ConnectionPool;
-import by.kastsiuchenka.onlinetraining.db.DbConnectionException;
+import by.ihi.onlinetraining.db.ConnectionPool;
+import by.ihi.onlinetraining.db.DbConnectionException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

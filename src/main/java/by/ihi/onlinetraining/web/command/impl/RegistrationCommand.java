@@ -1,12 +1,11 @@
-package by.kastsiuchenka.onlinetraining.web.command.impl;
+package by.ihi.onlinetraining.web.command.impl;
 
-import by.kastsiuchenka.onlinetraining.dao.DAOException;
-import by.kastsiuchenka.onlinetraining.entity.User;
-import by.kastsiuchenka.onlinetraining.service.ServiceException;
-import by.kastsiuchenka.onlinetraining.service.UserService;
-import by.kastsiuchenka.onlinetraining.service.impl.UserServiceImpl;
-import by.kastsiuchenka.onlinetraining.web.auth.Encoder;
-import by.kastsiuchenka.onlinetraining.web.command.Command;
+import by.ihi.onlinetraining.entity.User;
+import by.ihi.onlinetraining.service.ServiceException;
+import by.ihi.onlinetraining.service.impl.UserServiceImpl;
+import by.ihi.onlinetraining.web.auth.Encoder;
+import by.ihi.onlinetraining.web.command.Command;
+import by.ihi.onlinetraining.service.UserService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -26,7 +25,7 @@ public class RegistrationCommand implements Command {
         String email = req.getParameter("email");
 
         if (fio == null || login == null || password == null) {
-            resp.setHeader("errorMsg", "Invalid Login or Password");
+            resp.setHeader("errorMsg", "message.login.invalid-pass-login");
             return null;
         }
         try {
@@ -34,11 +33,11 @@ public class RegistrationCommand implements Command {
             User user = userService.findByLogin(login);
             if (user == null) {
                 userService.createUser(fio, login, password, email);
-                req.setAttribute("infoMsg", " Пользователь успешно создан. Войдите для продолжения");
+                req.getSession().setAttribute("infoMsg", "message.registration.success");
                 commandNext="login";
             } else {
-                resp.setHeader("errorMsg", "Пользователь с таким именем существует");
-                req.setAttribute("errorMsg", "Пользователь с таким именем существует");
+                resp.setHeader("infoMsg", "message.registration.duplicate");
+                req.setAttribute("infoMsg", "message.registration.duplicate");
             }
         } catch (ServiceException e) {
             LOGGER.info(e.getMessage(), e);

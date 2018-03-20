@@ -1,8 +1,8 @@
-package by.kastsiuchenka.onlinetraining.web.filter;
+package by.ihi.onlinetraining.web.filter;
 
 
-import by.kastsiuchenka.onlinetraining.web.command.CommandType;
-import by.kastsiuchenka.onlinetraining.web.handler.RequestHandler;
+import by.ihi.onlinetraining.web.command.CommandType;
+import by.ihi.onlinetraining.web.handler.RequestHandler;
 
 import java.io.IOException;
 
@@ -16,8 +16,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import static by.kastsiuchenka.onlinetraining.web.command.CommandType.LOGIN;
-
 
 //@WebFilter(urlPatterns = {"/frontController"})
 public class AuthFilter implements Filter {
@@ -30,7 +28,7 @@ public class AuthFilter implements Filter {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpServletResponse res = (HttpServletResponse) response;
         CommandType type = RequestHandler.getCommand(req);
-        if (LOGIN.equals(type)) {
+        if (CommandType.LOGIN.equals(type)) {
             String contextPath = req.getContextPath();
             HttpSession session = req.getSession();
             if((session.getAttribute("user") != null)) {

@@ -1,4 +1,4 @@
-package by.kastsiuchenka.onlinetraining.web.filter;
+package by.ihi.onlinetraining.web.filter;
 
 import java.io.IOException;
 

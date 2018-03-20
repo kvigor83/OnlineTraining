@@ -1,6 +1,6 @@
-package by.kastsiuchenka.onlinetraining.web.command.impl;
+package by.ihi.onlinetraining.web.command.impl;
 
-import by.kastsiuchenka.onlinetraining.web.command.Command;
+import by.ihi.onlinetraining.web.command.Command;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

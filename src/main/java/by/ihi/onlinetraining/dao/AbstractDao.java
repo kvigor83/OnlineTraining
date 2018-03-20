@@ -1,12 +1,12 @@
-package by.kastsiuchenka.onlinetraining.dao;
+package by.ihi.onlinetraining.dao;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 
-import by.kastsiuchenka.onlinetraining.db.DbConnectionException;
-import by.kastsiuchenka.onlinetraining.db.DbConnectionManager;
+import by.ihi.onlinetraining.db.DbConnectionException;
+import by.ihi.onlinetraining.db.DbConnectionManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

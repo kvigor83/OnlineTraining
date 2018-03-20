@@ -1,20 +1,16 @@
-package by.kastsiuchenka.onlinetraining.web.command.impl;
+package by.ihi.onlinetraining.web.command.impl;
 
 
-import by.kastsiuchenka.onlinetraining.dao.DAOException;
-import by.kastsiuchenka.onlinetraining.entity.Course;
-import by.kastsiuchenka.onlinetraining.entity.User;
-import by.kastsiuchenka.onlinetraining.service.CourseService;
-import by.kastsiuchenka.onlinetraining.service.ServiceException;
-import by.kastsiuchenka.onlinetraining.service.impl.CourseServiceImpl;
-import by.kastsiuchenka.onlinetraining.web.command.Command;
+import by.ihi.onlinetraining.entity.User;
+import by.ihi.onlinetraining.service.CourseService;
+import by.ihi.onlinetraining.service.ServiceException;
+import by.ihi.onlinetraining.service.impl.CourseServiceImpl;
+import by.ihi.onlinetraining.web.command.Command;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import java.util.List;
 
 
 public class CourseDeleteCommand implements Command {

@@ -1,4 +1,4 @@
-package by.kastsiuchenka.onlinetraining.web.auth;
+package by.ihi.onlinetraining.web.auth;
 
 import sun.misc.BASE64Encoder;
 

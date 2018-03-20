@@ -1,4 +1,4 @@
-package by.kastsiuchenka.onlinetraining.db;
+package by.ihi.onlinetraining.db;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -66,7 +66,7 @@ public class ConnectionPool {
         ProxyConnection connection;
         try {
             connection = connectionQueue.take();
-            System.out.println(String.valueOf(connectionQueue.size()));                               ////////////////////////
+            LOGGER.info(String.valueOf(connectionQueue.size()));                               ////////////////////////
             return connection;
         } catch (InterruptedException e) {
             throw new DbConnectionException("Connection can not be received from ConnectionPool. ", e);
@@ -78,7 +78,7 @@ public class ConnectionPool {
         try {
             connection.setAutoCommit(true);
             connectionQueue.put(connection);
-            System.out.println(String.valueOf(connectionQueue.size()));                               ////////////////////////
+            LOGGER.info(String.valueOf(connectionQueue.size()));                                ////////////////////////
         } catch (SQLException | InterruptedException e) {
             throw new DbConnectionException("Connection can not be returned in ConnectionPool. ", e);
         }
@@ -94,8 +94,8 @@ public class ConnectionPool {
                 LOGGER.error("ConnectionPool destruction error: connection " + i + "is not destroyed. ", e);
             }
         }
-        deregistrateAllDrivers();
-        instanceCreated.set(false);   //??
+        deregistrateAllDrivers();       //for deploy heroku**************************************
+        instanceCreated.set(false);
     }
 
     private void deregistrateAllDrivers() {

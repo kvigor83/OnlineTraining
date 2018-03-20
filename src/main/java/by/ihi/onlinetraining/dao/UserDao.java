@@ -1,6 +1,5 @@
-package by.kastsiuchenka.onlinetraining.dao;
+package by.ihi.onlinetraining.dao;
 
-import java.io.Serializable;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -8,7 +7,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import by.kastsiuchenka.onlinetraining.entity.User;
+import by.ihi.onlinetraining.entity.User;
 
 
 public class UserDao extends AbstractDao<User> {

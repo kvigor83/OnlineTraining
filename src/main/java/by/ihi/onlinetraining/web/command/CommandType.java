@@ -1,6 +1,6 @@
-package by.kastsiuchenka.onlinetraining.web.command;
+package by.ihi.onlinetraining.web.command;
 
-import by.kastsiuchenka.onlinetraining.web.command.impl.*;
+import by.ihi.onlinetraining.web.command.impl.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

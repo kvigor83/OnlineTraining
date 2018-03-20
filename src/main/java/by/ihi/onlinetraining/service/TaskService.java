@@ -1,7 +1,7 @@
-package by.kastsiuchenka.onlinetraining.service;
+package by.ihi.onlinetraining.service;
 
 
-import by.kastsiuchenka.onlinetraining.entity.Task;
+import by.ihi.onlinetraining.entity.Task;
 
 import java.util.List;
 

@@ -1,12 +1,9 @@
-package by.kastsiuchenka.onlinetraining.web.handler;
+package by.ihi.onlinetraining.web.handler;
 
-import by.kastsiuchenka.onlinetraining.web.command.CommandType;
+import by.ihi.onlinetraining.web.command.CommandType;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-
-
-import static by.kastsiuchenka.onlinetraining.web.command.CommandType.HOME;
 
 //Command Factory (client)
 public class RequestHandler {
@@ -24,8 +21,8 @@ public class RequestHandler {
             session.setAttribute("pagePath", type.getPagePath());
         } else {
             session.setAttribute("prevPage", type.getPageName());
-            session.setAttribute("pageName", HOME.getPageName());
-            session.setAttribute("pagePath", HOME.getPagePath());
+            session.setAttribute("pageName", CommandType.HOME.getPageName());
+            session.setAttribute("pagePath", CommandType.HOME.getPagePath());
         }
         return type;
     }

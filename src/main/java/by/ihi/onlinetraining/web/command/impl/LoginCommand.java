@@ -1,12 +1,11 @@
-package by.kastsiuchenka.onlinetraining.web.command.impl;
+package by.ihi.onlinetraining.web.command.impl;
 
-import by.kastsiuchenka.onlinetraining.dao.DAOException;
-import by.kastsiuchenka.onlinetraining.entity.User;
-import by.kastsiuchenka.onlinetraining.service.ServiceException;
-import by.kastsiuchenka.onlinetraining.service.UserService;
-import by.kastsiuchenka.onlinetraining.service.impl.UserServiceImpl;
-import by.kastsiuchenka.onlinetraining.web.auth.Encoder;
-import by.kastsiuchenka.onlinetraining.web.command.Command;
+import by.ihi.onlinetraining.service.ServiceException;
+import by.ihi.onlinetraining.service.impl.UserServiceImpl;
+import by.ihi.onlinetraining.web.command.Command;
+import by.ihi.onlinetraining.entity.User;
+import by.ihi.onlinetraining.service.UserService;
+import by.ihi.onlinetraining.web.auth.Encoder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -27,7 +26,7 @@ public class LoginCommand implements Command {
         String password = req.getParameter(PARAM_NAME_PASSWORD);
 
         if (login == null || password == null) {  //first enter
-            resp.setHeader("errorMsg", "Invalid Login or Password");
+            resp.setHeader("errorMsg", "message.login.invalid-pass-login");
             return null;
         }
         try {
@@ -40,7 +39,7 @@ public class LoginCommand implements Command {
                     commandNext = "courseTutor";
                 }
             } else {
-                req.setAttribute("errorMsg", "Incorrect Login or Password");
+                req.setAttribute("errorMsg", "message.login.invalid-pass-login");
             }
         } catch (ServiceException e) {
             LOGGER.info(e.getMessage(), e);

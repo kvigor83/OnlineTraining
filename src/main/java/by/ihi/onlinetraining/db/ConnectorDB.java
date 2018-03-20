@@ -1,4 +1,4 @@
-package by.kastsiuchenka.onlinetraining.db;
+package by.ihi.onlinetraining.db;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

@@ -1,4 +1,4 @@
-package by.kastsiuchenka.onlinetraining.web.command;
+package by.ihi.onlinetraining.web.command;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

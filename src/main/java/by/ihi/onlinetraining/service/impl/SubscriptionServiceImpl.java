@@ -1,13 +1,13 @@
-package by.kastsiuchenka.onlinetraining.service.impl;
+package by.ihi.onlinetraining.service.impl;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import by.kastsiuchenka.onlinetraining.dao.DAOException;
-import by.kastsiuchenka.onlinetraining.dao.SubscriptionDao;
-import by.kastsiuchenka.onlinetraining.entity.Subscription;
-import by.kastsiuchenka.onlinetraining.service.ServiceException;
-import by.kastsiuchenka.onlinetraining.service.SubscriptionService;
+import by.ihi.onlinetraining.dao.SubscriptionDao;
+import by.ihi.onlinetraining.dao.DAOException;
+import by.ihi.onlinetraining.entity.Subscription;
+import by.ihi.onlinetraining.service.ServiceException;
+import by.ihi.onlinetraining.service.SubscriptionService;
 
 import java.util.List;
 

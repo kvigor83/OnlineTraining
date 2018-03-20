@@ -14,12 +14,14 @@
 <fmt:setLocale value="${sessionScope.locale}"/>
 <fmt:setBundle basename="messages" var="i18n"/>
 <c:if test="${empty user}">
-<div class="container text-center">
-    <p><fmt:message key="homepage.message.need" bundle="${i18n}"/><a href="${pageContext.request.contextPath}/frontController?command=login"><fmt:message
-            key="header.login" bundle="${i18n}"/></a><fmt:message key="homepage.message.or" bundle="${i18n}"/> <a
-            href="${pageContext.request.contextPath}/frontController?command=registration"><fmt:message
-            key="header.singout" bundle="${i18n}"/></a><fmt:message key="homepage.message.for" bundle="${i18n}"/></p>
-</div>
+    <div class="container text-center">
+        <p><fmt:message key="homepage.message.need" bundle="${i18n}"/><a
+                href="${pageContext.request.contextPath}/frontController?command=login"><fmt:message
+                key="header.login" bundle="${i18n}"/></a><fmt:message key="homepage.message.or" bundle="${i18n}"/> <a
+                href="${pageContext.request.contextPath}/frontController?command=registration"><fmt:message
+                key="header.singout" bundle="${i18n}"/></a><fmt:message key="homepage.message.for" bundle="${i18n}"/>
+        </p>
+    </div>
 </c:if>
 <div align="left">
     <H2>Курсы</H2>

@@ -1,4 +1,4 @@
-package by.kastsiuchenka.onlinetraining.service;
+package by.ihi.onlinetraining.service;
 
 
 public class ServiceException extends Exception {

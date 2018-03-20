@@ -1,18 +1,18 @@
-package by.kastsiuchenka.onlinetraining.service.impl;
+package by.ihi.onlinetraining.service.impl;
 
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import by.kastsiuchenka.onlinetraining.dao.DAOException;
-import by.kastsiuchenka.onlinetraining.dao.UserDao;
+import by.ihi.onlinetraining.service.ServiceException;
+import by.ihi.onlinetraining.dao.DAOException;
+import by.ihi.onlinetraining.dao.UserDao;
 //import entity.Product;
 //import entity.Question;
-import by.kastsiuchenka.onlinetraining.entity.User;
-import by.kastsiuchenka.onlinetraining.service.ServiceException;
-import by.kastsiuchenka.onlinetraining.service.TransactionHelper;
-import by.kastsiuchenka.onlinetraining.service.UserService;
+import by.ihi.onlinetraining.entity.User;
+import by.ihi.onlinetraining.service.TransactionHelper;
+import by.ihi.onlinetraining.service.UserService;
 
 public class UserServiceImpl extends TransactionHelper implements UserService {
     private static final UserService INSTANCE = new UserServiceImpl();

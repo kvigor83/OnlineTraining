@@ -1,7 +1,6 @@
-package by.kastsiuchenka.onlinetraining.service;
+package by.ihi.onlinetraining.service;
 
-import by.kastsiuchenka.onlinetraining.dao.DAOException;
-import by.kastsiuchenka.onlinetraining.entity.Course;
+import by.ihi.onlinetraining.entity.Course;
 
 import java.util.List;
 

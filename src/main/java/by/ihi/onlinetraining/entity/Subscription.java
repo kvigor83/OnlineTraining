@@ -1,4 +1,4 @@
-package by.kastsiuchenka.onlinetraining.entity;
+package by.ihi.onlinetraining.entity;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

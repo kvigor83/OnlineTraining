@@ -1,4 +1,4 @@
-package by.kastsiuchenka.onlinetraining.db;
+package by.ihi.onlinetraining.db;
 
 public class DbConnectionException extends Exception {
     public DbConnectionException() {

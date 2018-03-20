@@ -1,6 +1,6 @@
-package by.kastsiuchenka.onlinetraining.service;
+package by.ihi.onlinetraining.service;
 
-import by.kastsiuchenka.onlinetraining.entity.Subscription;
+import by.ihi.onlinetraining.entity.Subscription;
 
 
 import java.util.List;

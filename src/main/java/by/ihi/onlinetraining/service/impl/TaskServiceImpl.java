@@ -1,14 +1,14 @@
-package by.kastsiuchenka.onlinetraining.service.impl;
+package by.ihi.onlinetraining.service.impl;
 
 
-import by.kastsiuchenka.onlinetraining.dao.DAOException;
-import by.kastsiuchenka.onlinetraining.dao.SubscriptionDao;
-import by.kastsiuchenka.onlinetraining.dao.TaskDao;
-import by.kastsiuchenka.onlinetraining.entity.Subscription;
-import by.kastsiuchenka.onlinetraining.entity.Task;
-import by.kastsiuchenka.onlinetraining.service.TaskService;
-import by.kastsiuchenka.onlinetraining.service.ServiceException;
-import by.kastsiuchenka.onlinetraining.service.TransactionHelper;
+import by.ihi.onlinetraining.dao.SubscriptionDao;
+import by.ihi.onlinetraining.dao.TaskDao;
+import by.ihi.onlinetraining.entity.Task;
+import by.ihi.onlinetraining.service.ServiceException;
+import by.ihi.onlinetraining.dao.DAOException;
+import by.ihi.onlinetraining.entity.Subscription;
+import by.ihi.onlinetraining.service.TaskService;
+import by.ihi.onlinetraining.service.TransactionHelper;
 
 import java.util.List;
 

@@ -11,7 +11,7 @@
 
     <tag>
         <name>footer</name>
-        <tag-class>by.kastsiuchenka.onlinetraining.tag.FooterTag</tag-class>
+        <tag-class>by.ihi.onlinetraining.tag.FooterTag</tag-class>
         <body-content>scriptless</body-content>
         <!--<body-content>empty</body-content>-->
     </tag>

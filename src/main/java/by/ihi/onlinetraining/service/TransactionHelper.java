@@ -1,10 +1,9 @@
-package by.kastsiuchenka.onlinetraining.service;
+package by.ihi.onlinetraining.service;
 
 import java.sql.SQLException;
 
-import by.kastsiuchenka.onlinetraining.db.DbConnectionException;
-import by.kastsiuchenka.onlinetraining.db.DbConnectionManager;
-import by.kastsiuchenka.onlinetraining.service.ServiceException;
+import by.ihi.onlinetraining.db.DbConnectionException;
+import by.ihi.onlinetraining.db.DbConnectionManager;
 
 public abstract class TransactionHelper {
 

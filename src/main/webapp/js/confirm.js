@@ -1,3 +1,4 @@
+
 function CorrectLogin(item) {
     var re = /^[A-Za-z][A-Za-z0-9_-]+$/;
     var item_view = 'login_view';
@@ -5,13 +6,13 @@ function CorrectLogin(item) {
     if (document.getElementById(item).value.length >= 5 && document.getElementById(item).value.search(re) > -1) {
         document.getElementById(item_correct).innerHTML = '';
         document.getElementById(item_correct).className = 'correct';
-        document.getElementById('check_login').value = 1;
+        // document.getElementById('check_login').value = 1;
     } else {
-        document.getElementById(item_correct).innerHTML = 'не допустимый логин';
+        // document.getElementById(item_correct).innerHTML = 'не допустимый логин';
         document.getElementById(item_correct).className = 'acorrect';
-        document.getElementById('check_login').value = 0;
+        // document.getElementById('check_login').value = 0;
     }
-    checkAll();
+    // checkAll();
 }
 
 
@@ -33,8 +34,8 @@ function CorrectPass(item) {
             document.getElementById('check_pass').value = 1;
             document.getElementById(item_view).innerHTML = '';
 
-        } else  {
-            document.getElementById(item_correct).innerHTML = 'не допустимый пароль';
+        } else {
+            // document.getElementById(item_correct).innerHTML = 'не допустимый пароль';
             document.getElementById(item_correct).className = 'acorrect';
             document.getElementById('check_pass').value = 0;
 
@@ -56,7 +57,7 @@ function CorrectRepass(item) {
         document.getElementById(item_correct).className = 'acorrect';
         document.getElementById('check_repass').value = 0;
     }
-    checkAll();
+    // checkAll();
 }
 
 
@@ -67,25 +68,25 @@ function CorrectEmail(item) {
         document.getElementById('email_correct').className = 'correct';
         document.getElementById('check_email').value = 1;
     } else {
-        document.getElementById('email_correct').innerHTML = 'не верный email';
+        // document.getElementById('email_correct').innerHTML = 'не верный email';
         document.getElementById('email_correct').className = 'acorrect';
         document.getElementById('check_email').value = 0;
     }
-    checkAll();
+    // checkAll();
 }
 
 
 function checkAll() {
-    var x;
-    var check_login = document.getElementById('check_login').value;
-    var check_pass = document.getElementById('check_pass').value;
-    var check_repass = document.getElementById('check_repass').value;
-    var check_email = document.getElementById('check_email').value;
-    x = check_login + check_pass + check_repass + check_email;
-    document.getElementById('check_all').value = x;
-    if (document.getElementById('check_all').value == 1111) {
-        document.getElementById('submit_id').hidden = false;
-    } else {
-        document.getElementById('submit_id').hidden = true;
-    }
+    // var x;
+    // var check_login = document.getElementById('check_login').value;
+    // var check_pass = document.getElementById('check_pass').value;
+    // var check_repass = document.getElementById('check_repass').value;
+    // var check_email = document.getElementById('check_email').value;
+    // x = check_login + check_pass + check_repass + check_email;
+    // document.getElementById('check_all').value = x;
+    // if (document.getElementById('check_all').value == 1111) {
+    //     document.getElementById('submit_id').hidden = false;
+    // } else {
+    //     document.getElementById('submit_id').hidden = true;
+    // }
 }
