@@ -1,7 +1,6 @@
 package by.kastsiuchenka.onlinetraining.web.command.impl;
 
 
-import by.kastsiuchenka.onlinetraining.entity.Course;
 import by.kastsiuchenka.onlinetraining.entity.User;
 import by.kastsiuchenka.onlinetraining.service.ServiceException;
 import by.kastsiuchenka.onlinetraining.service.CourseService;
@@ -12,7 +11,6 @@ import org.apache.logging.log4j.Logger;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.List;
 
 public class CourseEditCommand implements Command {
     private static final Logger LOGGER = LogManager.getRootLogger();

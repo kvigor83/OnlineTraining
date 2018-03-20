@@ -22,7 +22,7 @@ public class RequestHandler {
             session.setAttribute("prevPage", pageName);
             session.setAttribute("pageName", type.getPageName());
             session.setAttribute("pagePath", type.getPagePath());
-        } else {                                                            //first (do delete)
+        } else {
             session.setAttribute("prevPage", type.getPageName());
             session.setAttribute("pageName", HOME.getPageName());
             session.setAttribute("pagePath", HOME.getPagePath());
